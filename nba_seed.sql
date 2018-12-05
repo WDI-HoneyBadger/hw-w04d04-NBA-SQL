@@ -11,17 +11,18 @@ CREATE DATABASE nba_db;
 \c nba_db;
 
 -- Create table here
-
+CREATE TABLE players(id SERIAL , name TEXT , age INT , team TEXT , games INT , points INT);
 
 -- Insert player here
-
+insert info players(name ,age , team, games , points) Values('Anderson Varejao', '29' , 'CLE' , '25' , '271');
 
 ----------------------------------
 -- Part 2
 -- Uncomment COPY players statement and modify it with YOUR file path!
 
 
---COPY players
-  --(name, age, team, games, points)
---FROM '/Users/trevorpreston/code/wdi/homework/hw-w04d04-NBA-SQL/nba_season_2011_2012.csv'
-    --DELIMITER ',' CSV;
+COPY players
+  (name, age, team, games, points)
+
+FROM '/Users/muneerabinbaz/code/wdi/homework/hw-w04d04-NBA-SQL/nba_season_2011_2012.csv'
+    from ',' CSV;
