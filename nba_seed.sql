@@ -11,10 +11,10 @@ CREATE DATABASE nba_db;
 \c nba_db;
 
 -- Create table here
-
+CREATE TABLE players (name text, age int, team text, game int, points int);
 
 -- Insert player here
-
+INSERT INTO players (age, team, games, points) VALUES(’Anderson Varejao’ , 29, ‘CLE’, 25, 271);
 
 ----------------------------------
 -- Part 2
