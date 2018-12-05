@@ -11,10 +11,16 @@ CREATE DATABASE nba_db;
 \c nba_db;
 
 -- Create table here
-
+CREATE TABLE players (
+    name text,
+    age tinyint,
+    team varchar(3),
+    games smallint, 
+    points smallint, 
+);
 
 -- Insert player here
-
+INSERT INTO name , age , team, games, points VALUES (Jeff Adrien,25,HOU,8,21);
 
 ----------------------------------
 -- Part 2
@@ -23,5 +29,5 @@ CREATE DATABASE nba_db;
 
 --COPY players
   --(name, age, team, games, points)
---FROM '/Users/trevorpreston/code/wdi/homework/hw-w04d04-NBA-SQL/nba_season_2011_2012.csv'
+copy nba_db(name, age, team, games, points) from /Users/appleapple/code/wdi/homework/hw-w04d04-NBA-SQL/nba_season_2011-2012.csv’ DELIMITER ‘,’ CSV;
     --DELIMITER ',' CSV;
