@@ -24,7 +24,7 @@ INSERT INTO players VALUES('KHALID', 40, 'NOH', 28, 234 );
 
 --COPY players
   (name, age, team, games, points)
-FROM 'Users/mac/code/wdi/homework/hw-w04d04-NBA-SQL/nba_season_2011-2012.csv'
+FROM 'Users/mac/code/wdi/homework/hw-w04d04-NBA-SQL/nba_season_2011_2012.csv'
     DELIMITER ',' CSV;
 
 
