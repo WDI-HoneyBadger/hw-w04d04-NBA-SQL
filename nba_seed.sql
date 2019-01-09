@@ -1,4 +1,3 @@
-----------------------------------
 -- Part 1
 
 -- Drop DB if exists
@@ -11,10 +10,10 @@ CREATE DATABASE nba_db;
 \c nba_db;
 
 -- Create table here
-
+CREATE TABLE players( id SERIAL, name TEXT, age INT, team TEXT, games INT, points INT);
 
 -- Insert player here
-
+insert into players( name, age, team, games, points) values ( default,' Anderson Varejao' , '29', ' CLE', ' 25',  '271');
 
 ----------------------------------
 -- Part 2
